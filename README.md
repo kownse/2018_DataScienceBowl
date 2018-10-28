@@ -51,6 +51,8 @@ But I stopped improving when I finally get to the top 9%.
 There was really no more ideas from myself.
 Then the grand master Heng CherKeng published a serials of post talking about his own mrcnn implementation in pytorch.
 I believe he was, is and will be the true master in kaggle community who really understand the details of mrcnn.
+![Heng CherKeng's mrcnn](https://www.researchgate.net/profile/Yan_Xu4/publication/305401350/figure/fig2/AS:385845317128192@1469004100993/This-illustrates-the-structure-of-this-framework-We-fuse-outputs-of-three-channels-to.ppm)
+
 Unfortunately, I didn't learnt pytorch at that moment.
 I can only try to modify the matterport code into his idea.
 Althrough I didn't succeed in this, but I figured out why my score stopped improving.
@@ -66,6 +68,12 @@ Heng CherKeng didn't win the first place in this competition, but his idea inspi
 get a very good position.
 It is a surprise that the winner Victor Durnov and his team was using UNet with softmax in the end to predict
 both the nucleus and the border of cells. It turned out the best solutions to handle the massive cells.
+
+![1st place idea](https://www.dropbox.com/s/4igam47pqg0i82q/c43e356beedae15fec60ae3f8b06ea8e9036081951deb7e44f481b15b3acfc37_predict.png)
+
+After reading their github repository, I found it was not all.
+They trained a lightgbm after unet found the segmentations to check if each result is really a nucleus.
+
 
 I really have too much to learn, and I love the way kaggle spread ideas.
 
